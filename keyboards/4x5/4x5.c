@@ -133,30 +133,6 @@ void morse_type(char bit)
 		morse_bits[morse_bits_len - 1] = bit;
 	}
 	rgbann();
-<<<<<<< HEAD
-}
-
-bool morse_resolve(uint16_t *res)
-{
-	bool was_typing = false;
-
-	if (morse_status == MORSE_TYPING) {
-		if (cur_layer == MORSE_LAYER && timer_elapsed(morse_timer) < 3000) {
-			was_typing = true;
-			morse_bits[morse_bits_len] = 0;
-			*res = morse_search(morse_bits);
-		}
-
-		morse_status = MORSE_IDLE;
-	}
-
-	return was_typing;
-}
-
-bool morse_dot(keyrecord_t *record)
-{
-	morse_type('.');
-	return false;
 }
 
 bool morse_resolve(uint16_t *res)
