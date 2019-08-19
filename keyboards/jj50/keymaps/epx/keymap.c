@@ -16,7 +16,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		KC_LGUI, KC_LALT, KC_LALT, KC_LCTL, LT(2, KC_SPC), KC_SPC, KC_SPC, LT(2, KC_SPC), KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+		KC_LCTL, KC_LALT, KC_LALT, KC_RCTL, LT(2, KC_SPC), KC_SPC, KC_SPC, LT(2, KC_SPC), KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 		),
 
 	[2] = LAYOUT(
@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, KC_BSLS,
 		KC_CAPS, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, 
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, 
-		_______, _______, _______, KC_APP,  MO(3),   _______, _______, MO(3),   KC_HOME, KC_PGDN, KC_PGUP, KC_END
+		_______, _______, KC_LGUI, KC_APP,  MO(3),   _______, _______, MO(3),   KC_HOME, KC_PGDN, KC_PGUP, KC_END
 		),
 
 	[3] = LAYOUT(
